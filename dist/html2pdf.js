@@ -1980,7 +1980,7 @@ Worker.prototype.toContainer = function toContainer() {
       // Add rules for css mode.
       if (mode.css) {
         // TODO: Check if this is valid with iFrames.
-        var style =typeof window !== 'undefined' &&  window.getComputedStyle(el);
+        var style = typeof window !== 'undefined' && window.getComputedStyle(el);
         // TODO: Handle 'left' and 'right' correctly.
         // TODO: Add support for 'avoid' on breakBefore/After.
         var breakOpt = ['always', 'page', 'left', 'right'];
